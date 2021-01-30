@@ -37,3 +37,4 @@
 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 <link rel="stylesheet" href="{{asset('custom.css')}}">
 <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+@livewireStyles

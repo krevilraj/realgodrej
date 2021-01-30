@@ -3,11 +3,12 @@
 namespace App;
 
 use App\Helpers\Image\LocalImageFile;
+use App\Traits\ActiveScope;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model {
-	use Sluggable;
+	use Sluggable,ActiveScope;
 
 	/**
 	 * Return the sluggable configuration array for this model.

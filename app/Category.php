@@ -30,7 +30,8 @@ class Category extends Model {
 		'parent_id',
 		'name',
 		'slug',
-		'banner_img'
+		'banner_img',
+		'description',
 	];
 
 	/**

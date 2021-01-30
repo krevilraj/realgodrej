@@ -46,7 +46,7 @@
 <!-- Ajax-chimp JS -->
 <script src="{{asset('assets/js/plugins/jquery.ajaxchimp.min.js')}}"></script>
 
-
+@livewireScripts
 
 <!-- Vendor & Plugins JS (Please remove the comment from below vendor.min.js & plugins.min.js for better website load performance and remove js files from avobe) -->
 <!--
@@ -66,3 +66,4 @@
         },
     });
 </script>
+

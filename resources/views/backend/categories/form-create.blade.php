@@ -31,6 +31,13 @@
                 </span>
             @endif
         </div>
+        <div class="form-group">
+            <label for="home_about_title" class="col-sm-12 control-label">Description</label>
+            <div class="col-sm-10">
+
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+        </div>
 
         <div class="form-group @if ($errors->has('featured_image')) has-error @endif">
             {!! Form::label('featured_image','Featured Image', ['class' => 'control-label']) !!}

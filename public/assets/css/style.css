@@ -1,7 +1,7 @@
 /* =============================================
 =                CSS Index            =
 ============================================= */
-/*  
+/*
     01 - Base - Variables
     02 - Base - Mixins
 
@@ -25965,7 +25965,7 @@ html{
   .about_area img{
     margin-bottom: 2em;
   }
-}  
+}
 
 /*media for viewed slider*/
 @media(max-width:1160px){
@@ -26026,7 +26026,7 @@ html{
   .viewed .row .viewed_slider_container .topone .toponedetails p{
     font-size: 12px;
     margin-bottom: 8px;
-    
+
   }
 }
 
@@ -26187,7 +26187,7 @@ html{
   .cat_banner {
     height: 25vh !important;
   }
-} 
+}
 /*Media for cateogry about*/
 @media(max-width:767px){
   .about-section .row{
@@ -26232,7 +26232,7 @@ html{
 
 
 @media(max-width:575px){
-  
+
   .header-right-area{
     width: 50%!important;
     margin-top: -4.3em!important;
@@ -26276,3 +26276,298 @@ html{
   }
 }
 
+
+.washblock .rowsblock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.mainwash {
+    border: 1px solid lightgray;
+}
+
+.washblock {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.missionsec .rowmission {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ourmission {
+    border: none;
+}
+
+.ourmissionstarts {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.ourmissionstarts p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.missionbanner img {
+    height: 40vh;
+    width: 100vw;
+}
+
+.ourmissionstarts h3 {
+    font-size: 30px;
+    background: linear-gradient(to right, #5fb330 0%, #bc0960 50%, #4591d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+/* contactus css start Mohan */
+
+#contactus-container .top-list {
+    margin-bottom: 35px;
+}
+
+#contactus-container .top-list ul {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactus-container .top-list ul li {
+    padding: 5px 10px;
+    border: 1px solid rgb(192, 188, 188);
+    border-radius: 25px;
+}
+
+#contactus-container .top-list ul li.active {
+    border-color: #1a78e5;
+}
+
+#contactus-container .top-list ul li.active a {
+    color: #1a78e5;
+}
+
+#contactus-container .top-list ul li:hover > .top-list-link {
+    color: #1a78e5;
+}
+
+#contactus-container .top-list ul li:hover {
+    border-color: #1a78e5;
+}
+
+#contactus-container .top-list ul li a {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+#contactus-container .map-section iframe {
+    border-radius: 25px;
+}
+
+#contactus-container .businessunit-section {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 1em 0;
+}
+
+#contactus-container .businessunit-section .address-section h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#contactus-container .businessunit-section .address-section h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+#contactus-container .businessunit-section .address-section p {
+    font-size: 14px;
+    color: rgba(39,48,67,.5);
+}
+
+#contactus-container .businessunit-section .swiper-container-business-section {
+    overflow: hidden;
+    position: relative;
+}
+
+.business-unit-text {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+#contactus-container .businessunit-section .swiper-container-business-section .swiper-slide {
+    padding: 1em 0 1em 1em;
+    border: 2px solid rgba(161, 162, 165, 0.5);
+    border-radius: 10px;
+    margin: 1em 5px;
+    transition: box-shadow ease-out 300ms;
+    height: 50vh;
+}
+
+#contactus-container .businessunit-section .swiper-container-business-section .swiper-slide:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: none;
+}
+
+.email-inside-slide {
+    margin-top: 2em;
+}
+
+#contactus-container .businessunit-section .swiper-container-business-section .swiper-slide h4 {
+    line-height: 1.2;
+    height: calc(20px * 1.2 * 2);
+    margin-bottom: 5px;
+}
+
+#contactus-container .businessunit-section .swiper-container-business-section .swiper-slide p{
+    color: rgba(39,48,67,.5);
+    line-height: 1.5;
+    white-space: normal;
+    font-size: 14px;
+    margin-bottom: 5em;
+}
+
+.contactform-section {
+    display: flex;
+    margin: 2em 0;
+}
+
+.contactform-section .leftside {
+    /* display: inline-block; */
+    width: 30%;
+}
+
+.contactform-section .rightside {
+    /* display: inline-block; */
+    width: 60%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    padding: 2em;
+}
+
+.contactform-section .rightside .input-style {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(161, 162, 165, 0.5);
+    margin-bottom: 2em;
+    padding: 10px 0;
+}
+
+.contactform-section .rightside .input-style1 {
+    margin-bottom: 0;
+}
+
+.contactform-section .rightside .purpose-label {
+    color: red;
+    margin-bottom: 1em;
+}
+
+.contactform-section .rightside .button {
+    text-align: center;
+}
+
+.contactform-section .rightside button {
+    /* padding: 15px 35px; */
+    width: 250px;
+    padding: 15px;
+    background-color: #1a78e5;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contactform-section .rightside button:hover {
+    background-color: purple;
+}
+
+
+/* contactus css end Mohan */
+
+
+
+/* career section css start Mohan */
+
+.career-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin: 2em;
+}
+
+.career-title {
+    text-align: center;
+}
+
+.career-title h1,
+.career-section .career h3 {
+    color: purple;
+}
+
+.career-section .career {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1em;
+    padding-top: 2em;
+    height: 45vh;
+    transition: transform 200ms ease-out;
+    cursor: pointer;
+}
+
+.career-section .career:hover {
+    transform: scale(1.03);
+}
+
+.career-section .career img {
+    height: 100px;
+    margin-bottom: 2em;
+}
+
+.career-section .career h3 {
+    margin-bottom: 1em;
+}
+
+/* career section css end Mohan */
+
+
+
+/* career detail css start Mohan */
+
+.top-image {
+    margin-bottom: 2em;
+}
+
+.top-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 55vh;
+}
+
+.careers-detail {
+    width: 80%;
+}
+
+.careers-detail .career-detail {
+    margin-bottom: 2em;
+}
+
+.careers-detail .career-detail h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: purple;
+}
+
+.careers-detail .career-detail p {
+    font-size: 14px;
+}
+
+/* career detail css end Mohan */

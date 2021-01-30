@@ -116,6 +116,31 @@
                     </ul>
                 </li>
 
+                <li class="nav-item has-treeview {{ ($route == 'dashboard.career.index' || $route == 'dashboard.career.create' || $route == 'dashboard.career.edit')  ? 'menu-open': null }}">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fa fa-file"></i>
+                        <p>
+                            Career
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview ">
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard.career.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>All Careers</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard.career.create') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add Career Vacancies</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
 
                 <li class="nav-item has-treeview {{ ($route == 'dashboard.team.index' || $route == 'dashboard.team.create' || $route == 'dashboard.team.edit')  ? 'menu-open': null }}">
                     <a href="#" class="nav-link">
@@ -147,6 +172,24 @@
                         <i class="nav-icon fas fa-cogs"></i>
                         <p>
                             Settings
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item has-treeview {{ ($route == 'dashboard.message.index'? 'menu-open': null) }}">
+                    <a href="{{ route('dashboard.message.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-envelope"></i>
+                        <p>
+                            Message
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item has-treeview {{ ($route == 'dashboard.unit.index'? 'menu-open': null) }}">
+                    <a href="{{ route('dashboard.unit.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-file-alt"></i>
+                        <p>
+                            Business Units
                         </p>
                     </a>
                 </li>

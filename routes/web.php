@@ -19,6 +19,8 @@ Route::get('/contact', '\App\Http\Livewire\Contact')->name('contact');
 Route::get('/enquiry', '\App\Http\Livewire\Enquiry')->name('enquiry');
 Route::get('/product/{slug}', '\App\Http\Livewire\ProductDetail')->name('product.show');
 Route::get('/category/{slug}', '\App\Http\Livewire\Category')->name('shop.category');
+Route::get('/search', '\App\Http\Livewire\Search')->name('search');
+Route::get('/page/{slug}', ['uses' => 'PageController@getPage'])->where('slug', '([A-Za-z0-9\-\/]+)');
 
 Auth::routes();
 
@@ -50,8 +52,19 @@ Route::group([
     Route::resource('team', 'TeamController', ['except' => ['show']]);
     Route::get('/get-team', 'TeamController@getTeamJson')->name('team.json');
 
+    Route::resource('career', 'CareerController', ['except' => ['show']]);
+    Route::get('/get-career', 'CareerController@getCareerJson')->name('career.json');
+
     Route::resource('page', 'PageController', ['except' => ['show']]);
     Route::get('/get-pages', 'PageController@getPagesJson')->name('pages.json');
+
+    Route::resource('unit', 'UnitController', ['except' => ['show']]);
+    Route::get('/get-units', 'UnitController@getUnitsJson')->name('unit.json');
+
+
+    Route::resource('message', 'MessageController', ['except' => ['show']]);
+    Route::get('/get-messages', 'MessageController@getMessagesJson')->name('message.json');
+
 });
 
 

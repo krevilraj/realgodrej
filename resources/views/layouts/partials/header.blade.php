@@ -315,8 +315,8 @@
                 <!-- Begin Offcanvas Search Area -->
                 <div class="offcanvas-search">
                     <span class="searchbox-info">Start typing and press Enter to search</span>
-                    <form action="#" class="hm-searchbox">
-                        <input type="text" placeholder="Search">
+                    <form action="/search" class="hm-searchbox" method="get">
+                        <input type="text" placeholder="Search" name="q">
                         <button class="search_btn" type="submit"><i class="lastudioicon-zoom-1"></i></button>
                     </form>
                 </div>

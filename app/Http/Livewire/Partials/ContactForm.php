@@ -6,15 +6,16 @@ use Livewire\Component;
 
 class ContactForm extends Component
 {
-  public $name, $email, $message, $subject, $phone;
+  public $first_name,$last_name, $email, $message, $subject, $phone,$from,$address;
 
   public function updated($field)
   {
     $this->validateOnly($field, [
       'email' => 'required|email',
-      'name' => 'required',
+      'first_name' => 'required',
+      'last_name' => 'required',
       'phone' => 'required',
-      'subject' => 'required',
+      'address' => 'required',
       'message' => 'required'
     ]);
   }
@@ -28,27 +29,24 @@ class ContactForm extends Component
   public function insertContact()
   {
     $this->validate([
-      'email' => 'required|max:255|email',
-      'name' => 'required',
-      'phone' => 'required',
-      'subject' => 'required',
-      'message' => 'required'
+        'email' => 'required|email',
+        'first_name' => 'required',
+        'last_name' => 'required',
+        'phone' => 'required',
+        'address' => 'required',
+        'message' => 'required'
     ]);
-    $newRequest = new \App\Contact();
-    $newRequest->name = $this->name;
+    $newRequest = new \App\Message();
+    $newRequest->first_name = $this->first_name;
+    $newRequest->last_name = $this->last_name;
     $newRequest->email = $this->email;
-    $newRequest->subject = $this->subject;
+    $newRequest->from = $this->from;
     $newRequest->phone = $this->phone;
+    $newRequest->address = $this->address;
     $newRequest->message = $this->message;
 
     $newRequest->save();
-    $data = [
-      'name' => $this->name,
-      'email' => $this->email,
-      'subject' => $this->subject,
-      'message' => $this->message,
-      'phone' => $this->phone,
-    ];
+
     $this->reset();
 
     session()->flash('success', 'Thanks for contacting us');
