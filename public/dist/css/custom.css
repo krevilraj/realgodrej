@@ -1,0 +1,32 @@
+.mt-15{
+    margin-top: 15px;
+}
+.mr-15{
+    margin-right: 15px !important;
+}
+.product-image-list{
+    display: flex;
+}
+.image-preview{
+    margin-right: 18px;
+    margin-top:15px;
+    text-align: center;
+}
+button.is_main_image_button.active{
+    background-color: #d2dd98 !important;
+    border-color: #838441 !important;
+}
+.pl-none{
+    list-style:none;
+    padding: 0;
+}
+.pl-none input{
+    margin-right: 10px;
+}
+.pull-right{
+    float:right;
+}
+.help-block{
+    font-style: italic;
+    color:red;
+}

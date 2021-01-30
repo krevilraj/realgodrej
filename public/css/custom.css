@@ -1,0 +1,83 @@
+@media (min-width: 992px) {
+    .topBarContactList {
+        letter-spacing: 0.5px;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.mr-25 {
+    margin-right: 15px !important;
+}
+
+ul.list-unstyled.ano {
+    float: right;
+}
+
+ul.list-unstyled.ano li {
+    margin-right: 0;
+}
+
+@media (min-width: 1230px) {
+    .pageHeaderHolder {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.logo a img {
+    width: 94px;
+}
+
+@media (min-width: 1230px) {
+    .pageMainNavigation.navbar-nav .nav-link {
+        padding-bottom: 21px;
+    }
+}
+
+.logo_area .yummy-logo {
+    padding: 5px 0 6px 0;
+}
+
+.pageHeaderTopBar ul {
+    display: flex;
+    text-decoration: none;
+    text-style: none;
+    list-style: none;
+    font-size: 14px;
+    padding-left: 0;
+    padding: 5px 0;
+    margin-bottom: 0;
+
+}
+
+.pageHeaderTopBar ul li {
+    margin-right: 35px;
+}
+
+.pageHeaderTopBar ul li a {
+    color: #6e6e6e;
+    font-size: 13px;
+}
+
+#pageHeader .headerFixer .container {
+    position: relative;
+}
+
+.pageNavHolder {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.alert.alert-success {
+
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+.mb-15{
+    margin-bottom: 45px;
+}
