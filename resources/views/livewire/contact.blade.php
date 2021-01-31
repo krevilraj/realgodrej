@@ -40,97 +40,12 @@
                     <!-- Swiper -->
                     <div class="swiper-container-business-section">
                         <div class="swiper-wrapper">
+                            @foreach($units as $unit)
                             <div class="swiper-slide">
-                                <h4>Godrej Aerospace</h4>
-                                <p>
-                                    Godrej & Boyce Manufacturing Company Limited, Plant 8,
-                                    <br>
-                                    Pirojshanagar, Vikhroli
-                                    <br>
-                                    Mumbai 400 079, India
-                                    <br>
-                                    <br>
-
-                                    <span class="email-inside-slide">
-                                       srkn@godrej.com
-                                   </span>
-                                </p>
+                                <h4>{{$unit->title}}</h4>
+                              {!! $unit->description !!}
                             </div>
-                            <div class="swiper-slide">
-                                <h4>Godrej Appliances</h4>
-                                <p>
-                                    Godrej & Boyce Manufacturing Company Limited, Plant 11,
-                                    <br>
-                                    Pirojshanagar, Vikhroli
-                                    <br>
-                                    Mumbai 400 079, India
-                                    <br>
-                                    <br>
-                                    <span class="email-inside-slide">
-                                        smartcare@godrej.com
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>Godrej Construction</h4>
-                                <p>
-                                    Godrej & Boyce Manufacturing Company Limited, Plant 25,
-                                    <br>
-                                    Pirojshanagar, Vikhroli
-                                    <br>
-                                    Mumbai 400 079, India
-                                    <br>
-                                    <br>
-                                    <span class="email-inside-slide">
-                                       construction@godrej.com
-                                   </span>
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>Godrej Electricals & Electronics</h4>
-                                <p>
-                                    Godrej & Boyce Manufacturing Company Limited, Plant 1,
-                                    <br>
-                                    Pirojshanagar, Vikhroli
-                                    <br>
-                                    Mumbai 400 079, India
-                                    <br>
-                                    <br>
-                                    <span class="email-inside-slide">
-                                       spurohit@godrej.com
-                                   </span>
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>Godrej Interio</h4>
-                                <p>
-                                    Godrej & Boyce Manufacturing Company Limited, Plant 13,
-                                    <br>
-                                    Pirojshanagar, Vikhroli
-                                    <br>
-                                    Mumbai 400 079, India
-                                    <br>
-                                    <br>
-                                    <span class="email-inside-slide">
-                                       interiocare@godrej.com
-                                   </span>
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>Godrej Locking Solutions & Systems</h4>
-                                <p>
-                                    Godrej & Boyce Manufacturing Company Limited, Plant 8,
-                                    <br>
-                                    Pirojshanagar, Vikhroli
-                                    <br>
-                                    Mumbai 400 079, India
-                                    <br><br>
-
-                                    <span class="email-inside-slide">
-                                       locksmkt@godrej.com
-                                   </span>
-                                </p>
-                            </div>
+                            @endforeach
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>

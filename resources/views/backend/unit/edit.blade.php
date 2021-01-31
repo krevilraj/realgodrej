@@ -30,12 +30,12 @@
                         @include('backend.partials.message-success')
                         @include('backend.partials.message-error')
                     </div>
+                </div>
 
                     {!! Form::model($unit, ['method' => 'PATCH', 'files' => true, 'action' => ['Backend\UnitController@update', $unit->id], 'class' => '']) !!}
                     @include('backend.unit.form', ['submitButtonText' => 'Update'])
                     {!! Form::close() !!}
 
-                </div>
             </div>
         </section>
     </div>

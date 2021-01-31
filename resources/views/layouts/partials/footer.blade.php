@@ -54,7 +54,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-8 col-12">
                     <div class="copyright">
-                        <span>Copyright © 2020. Godrej.com.np | Disclaimer | Privacy Policy | T&C | </span>
+                        <span>{{getConfiguration('copyright')}} | Disclaimer | Privacy Policy | T&C | </span>
 
                     </div>
                 </div>

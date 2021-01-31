@@ -16,7 +16,7 @@ class CreateCareersTable extends Migration
         Schema::create('careers', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description');
+            $table->longText('description')->nullable();
             $table->date('expire_in')->nullable();
             $table->integer( 'user_id' )->unsigned()->references( 'id' )->on( 'users' )->onDelete( 'cascade' );
             $table->boolean('status');

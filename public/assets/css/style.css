@@ -26556,17 +26556,17 @@ html{
     width: 80%;
 }
 
-.careers-detail .career-detail {
+.careers-detail{
     margin-bottom: 2em;
 }
 
-.careers-detail .career-detail h2 {
+.careers-detail  h2 {
     font-size: 20px;
     margin-bottom: 8px;
     color: purple;
 }
 
-.careers-detail .career-detail p {
+.careers-detail p {
     font-size: 14px;
 }
 

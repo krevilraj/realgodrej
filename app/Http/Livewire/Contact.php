@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Unit;
 use Livewire\Component;
 
 class Contact extends Component
@@ -21,7 +22,8 @@ class Contact extends Component
 
   public function render()
   {
-    return view('livewire.contact');
+      $units = Unit::latest()->get();
+    return view('livewire.contact',compact('units'));
   }
 
   public function insertContact()

@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', '\App\Http\Livewire\Welcome')->name('welcome');
 Route::get('/about', '\App\Http\Livewire\About')->name('about');
+Route::get('/career', '\App\Http\Livewire\Career')->name('career');
 Route::get('/contact', '\App\Http\Livewire\Contact')->name('contact');
 Route::get('/enquiry', '\App\Http\Livewire\Enquiry')->name('enquiry');
 Route::get('/product/{slug}', '\App\Http\Livewire\ProductDetail')->name('product.show');
+Route::get('/career/{id}', '\App\Http\Livewire\CareerDetail')->name('career.show');
 Route::get('/category/{slug}', '\App\Http\Livewire\Category')->name('shop.category');
 Route::get('/search', '\App\Http\Livewire\Search')->name('search');
 Route::get('/page/{slug}', ['uses' => 'PageController@getPage'])->where('slug', '([A-Za-z0-9\-\/]+)');
